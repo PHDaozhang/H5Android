@@ -40,8 +40,8 @@ public class JSModel {
     }
 
     @JavascriptInterface
-    public boolean openURL(String url) {
-        return true;
+    public void openURL(String url) {
+        MainLoigc.getSingleton().openURL(url);
     }
 
     @JavascriptInterface
