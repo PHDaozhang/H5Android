@@ -30,6 +30,11 @@ public class JSModel {
     }
 
     @JavascriptInterface
+    public String convertURL(String url) {
+        return MainLoigc.getSingleton().convertURL(url);
+    }
+
+    @JavascriptInterface
     public String getDeviceID() {
         return MainLoigc.getSingleton().getDeviceID();
     }

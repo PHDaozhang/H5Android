@@ -63,6 +63,8 @@ public class MainWebView {
             localWebSettings.setAllowFileAccessFromFileURLs(true);
         }
         localWebSettings.setJavaScriptEnabled(true);
+        localWebSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
+        
         mWebView.addJavascriptInterface(new JSModel(), "nativeInterface");
         mWebView.addJavascriptInterface(new JSLogModel(), "console");
 
